@@ -1,2 +1,3 @@
 # DESARROLLO EN ENTORNO CLIENTE
-Desarrollo Web en Entorno Cliente
+Desglose de toda las practicas de la asignatura.
+
