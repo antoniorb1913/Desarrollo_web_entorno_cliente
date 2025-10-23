@@ -4,22 +4,21 @@
     <meta charset="UTF-8">
     <title>Control de acceso - Primer presidente</title>
     <script>
-        let respuesta; // Variable para guardar la respuesta del usuario
+        let respuesta;
 
-        // El bucle se ejecuta al menos una vez
         do {
-            // Pedimos al usuario que responda
+  
             respuesta = prompt("¿Cuál fue el primer presidente de la democracia española?");
 
-            // Si solo escribe el nombre
+
             if (respuesta === "Adolfo") {
                 alert("Te falta el apellido. ¿Cuál fue el primer presidente de la democracia española?");
             }
-            // Si solo escribe el apellido
+
             else if (respuesta === "Suárez") {
                 alert("Te falta el nombre. ¿Cuál fue el primer presidente de la democracia española?");
             }
-            // Si pone algo incorrecto
+
             else if (respuesta !== "Adolfo Suárez") {
                 alert("ERROR. Inténtelo de nuevo. ¿Cuál fue el primer presidente de la democracia española?");
             }
