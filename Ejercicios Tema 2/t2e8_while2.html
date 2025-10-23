@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <title>Control de acceso - Primer presidente</title>
     <script>
-        let respuesta;
+        function norm (s) {
+            return s
+                .tolowerCase()
+                .trim()
+                .normalize("NFD")
 
+        }
+
+        let respuesta;
 
         do {
 
-            respuesta = prompt("¿Cuál fue el primer presidente de la democracia española?");
+            respuesta = prompt("¿Cuál fue el primer presidente de la democracia española?").S();
 
             if (respuesta === "Adolfo") {
-                alert("Te falta el apellido. ¿Cuál fue el primer presidente de la democracia española?");
+                alert("Te falta el apellido. ¿Cuál fue el primer presidente de la democracia española?").S();
             }
 
             else if (respuesta === "Suárez") {
-                alert("Te falta el nombre. ¿Cuál fue el primer presidente de la democracia española?");
+                alert("Te falta el nombre. ¿Cuál fue el primer presidente de la democracia española?").S();
             }
 
             else if (respuesta !== "Adolfo Suárez") {
-                alert("ERROR. Inténtelo de nuevo. ¿Cuál fue el primer presidente de la democracia española?");
+                alert("ERROR. Inténtelo de nuevo. ¿Cuál fue el primer presidente de la democracia española?").S();
             }
 
         // Repetimos mientras no escriba correctamente el nombre completo
