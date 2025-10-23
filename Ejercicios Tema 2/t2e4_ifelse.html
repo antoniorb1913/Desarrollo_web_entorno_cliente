@@ -6,7 +6,7 @@
     <script>
         let edad = (prompt("Introduce tu edad:"));
 
-        if (edad < 0) {
+        if (isNaN(edad)) {
             alert("La edad no puede ser negativa.");
         } else if (edad <= 12) {
             alert("Eres un niño.");
