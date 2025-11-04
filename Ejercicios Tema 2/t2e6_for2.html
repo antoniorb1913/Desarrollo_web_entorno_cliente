@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de horas</title>
+    <script>
+
+        for (let hora = 9; hora <= 21; hora++) {
+            for (let minuto = 0; minuto < 60; minuto += 5) {
+                if (minuto < 10) {
+                    document.write(hora + ":0" + minuto + "<br>");
+                } else {
+                    document.write(hora + ":" + minuto + "<br>");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

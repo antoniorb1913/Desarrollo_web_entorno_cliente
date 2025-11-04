@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de Horas</title>
+</head>
+<body>
+    <script>
+        for (let hora = 9, media = false; hora < 22;) {
+            if (media) {
+                document.write(hora + ":30<br>");
+            } else {
+                document.write(hora + ":00<br>");
+            }
+
+            if (media) {
+                hora++;
+                media = false;
+            } else {
+                media = true;
+            }
+        }
+    </script>
+</body>
+</html>
