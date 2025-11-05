@@ -56,7 +56,7 @@ function calcularCategoria() {
     let resultadoCat = document.getElementById("resultadoCat");
         resultadoCat.innerHTML = "<p><strong>Tu categoría es: </strong></p>";
 
-     for (let i = 0; i < categorias.length; i++) {
+    for (let i = 0; i < categorias.length; i++) {
         if (categorias[i] === categoria) {
             resultadoCat.innerHTML += "<p><strong>" + categorias[i] + "</strong></p>";
         } else {
