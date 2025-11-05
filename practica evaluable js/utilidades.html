@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asociación Deportiva Castro Urdiales</title>
+    
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="estilos/estilos.css">
+    
+    <!-- Scripts JavaScript -->
     <script src="js/imc.js"></script>
     <script src="js/fcm.js"></script>
     <script src="js/categoria.js"></script>
@@ -12,60 +17,48 @@
 <body>
     <!-- Encabezado -->
     <header>
-        <div>
-            <div>
-                <h1>Asociación Deportiva Castro Urdiales</h1>
-                <p>Promoviendo el deporte y la salud en nuestra comunidad</p>
-            </div>
+        <div class="container">
+            <h1>Asociación Deportiva Castro Urdiales</h1>
+            <p>Promoviendo el deporte y la salud en nuestra comunidad</p>
         </div>
-        
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="utilidades.html">Utilidades</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <div>
-        <!-- main -->
+    <div class="container">
+        <!-- Contenido principal -->
         <main>
             <h3>Utilidades Deportivas</h3>
-        <table border="1">
-        <tr>
-            <th>Utilidad</th>
-            <th>Resultado</th>
-        </tr>
-        <tr>
-            <td><a href="#" onclick="calcularIMC()">Calcular IMC</a></td>
-            <td><p id="resultadoIMC"></p></td>
-        </tr>
-        <tr>
-            <td><a href="#" onclick="calcularFCM()">Calcular FCM</a></td>
-            <td><p id="resultadoFCM"></p></td>
-        </tr>
-        <tr>
-            <td><a href="#" onclick="calcularCategoria()">Calcular Categorias</a></td>
-            <td><p id="resultadoCat"></p></td>
-        </tr>
-        <tr>
-            <td><a href="#" onclick="horarioManana()">Horario Mañana</a><br>
-            <a href="#" onclick="horarioTarde()">Horario Tarde</a>
-            </td>
-            <td><p id="resultadoH"></p></td>
-
-
-        </tr>
-    </table>
+            <table>
+                <tr>
+                    <th>Utilidad</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="calcularIMC()">Calcular IMC</a></td>
+                    <td><p id="resultadoIMC"></p></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="calcularFCM()">Calcular FCM</a></td>
+                    <td><p id="resultadoFCM"></p></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="calcularCategoria()">Calcular Categorías</a></td>
+                    <td><p id="resultadoCat"></p></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="generarHorarios()">Generar Horarios</a><br></td>
+                    <td><p id="resultadoH"></p></td>
+                </tr>
+            </table>
         </main>
+    </div>
 
-    <!-- footer -->
+    <!-- Pie de página -->
     <footer>
-        <div>
+        <div class="container">
             <p>Asociación Deportiva Castro Urdiales</p>
-        </div>
-        <div>
-            <p>&copy; 2025 Asociación Deportiva Castro Urdiales. Todos los derechos reservados.</p>
+            <div>
+                <p>&copy; 2025 Asociación Deportiva Castro Urdiales. Todos los derechos reservados.</p>
+            </div>
         </div>
     </footer>
 </body>
