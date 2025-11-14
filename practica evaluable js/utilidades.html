@@ -17,10 +17,17 @@
 <body>
     <!-- Encabezado -->
     <header>
-        <div class="container">
-            <h1>Asociación Deportiva Castro Urdiales</h1>
-            <p>Promoviendo el deporte y la salud en nuestra comunidad</p>
+        <div class="container" style="display: flex; gap: 20%;">
+            <div class="titulo">
+                <h1>Asociación Deportiva Castro Urdiales</h1>
+                <p>Promoviendo el deporte y la salud en nuestra comunidad</p>
+            </div>
+            <div style="width: 120px; text-align: center; border: 1px solid #333; background-color: white;">
+                <div style="background-color: #4a6fa5; color: white; padding: 5px; font-weight: bold;">
+                    <span id="fechaActual"></span>
+                </div>
         </div>
+
     </header>
 
     <div class="container">
@@ -51,6 +58,18 @@
             </table>
         </main>
     </div>
+    <script>
+        let divFecha = document.getElementById("fechaActual");
+        let fechaHoy = new Date();
+
+        let dia = fechaHoy.getDate();
+        let mes = fechaHoy.getMonth() + 1;
+        let año = fechaHoy.getFullYear();
+
+        let fechaPuesta = dia + "/" + mes + "/" + año;
+
+        divFecha.innerHTML = fechaPuesta;
+    </script>
 
     <!-- Pie de página -->
     <footer>
