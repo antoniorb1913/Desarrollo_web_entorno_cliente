@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asociación Deportiva Castro Urdiales</title>
+    
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="estilos/estilos.css">
+    
+    <!-- Scripts JavaScript -->
+    <script src="js/imc.js"></script>
+    <script src="js/fcm.js"></script>
+    <script src="js/categoria.js"></script>
+    <script src="js/horario.js"></script>
+    <script src="js/contrasena.js"></script>
+</head>
+<body>
+    <!-- Popup de Bienvenida -->
+    <div id="popupBienvenida" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 20px; border: 2px solid #4a6fa5; z-index: 1000;">
+        <h3>¡Bienvenido/a!</h3>
+        <p>Gracias por visitar la Asociación Deportiva Castro Urdiales</p>
+        <button onclick="cerrarPopup()">Cerrar</button>
+    </div>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="container" style="display: flex; gap: 20%;">
+            <div class="titulo">
+                <h1>Asociación Deportiva Castro Urdiales</h1>
+                <p>Promoviendo el deporte y la salud en nuestra comunidad</p>
+            </div>
+            <div style="background-color: #4a6fa5; color: white; padding: 5px; font-weight: bold;">
+                <span id="fechaActual"></span>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Contenido principal -->
+        <main>
+            <h3>Utilidades Deportivas</h3>
+            <table>
+                <tr>
+                    <th>Utilidad</th>
+                    <th>Resultado</th>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="calcularIMC()">Calcular IMC</a></td>
+                    <td><p id="resultadoIMC"></p></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="calcularFCM()">Calcular FCM</a></td>
+                    <td><p id="resultadoFCM"></p></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="calcularCategoria()">Calcular Categorías</a></td>
+                    <td><p id="resultadoCat"></p></td>
+                </tr>
+                <tr>
+                    <td><a href="#" onclick="generarHorarios()">Generar Horarios</a><br></td>
+                    <td><p id="resultadoH"></p></td>
+                </tr>
+                <!-- Nueva fila para el validador de contraseñas -->
+                <tr>
+                    <td><a href="#" onclick="vContrasena()">Validar Contraseña</a></td>
+                    <td><p id="resultadoC"></p></td>
+                </tr>
+            </table>
+        </main>
+    </div>
+
+    <script>
+        // Mostrar popup después de 10 segundos
+        setTimeout(function() {
+            document.getElementById('popupBienvenida').style.display = 'block';
+        }, 10000);
+
+        // Función para cerrar el popup
+        function cerrarPopup() {
+            document.getElementById('popupBienvenida').style.display = 'none';
+        }
+
+        // Mostrar fecha actual
+        let divFecha = document.getElementById("fechaActual");
+        let fechaHoy = new Date();
+
+        let dia = fechaHoy.getDate();
+        let mes = fechaHoy.getMonth() + 1;
+        let año = fechaHoy.getFullYear();
+
+        let fechaPuesta = dia + "/" + mes + "/" + año;
+
+        divFecha.innerHTML = fechaPuesta;
+    </script>
+
+    <!-- Pie de página -->
+    <footer>
+        <div class="container">
+            <p>Asociación Deportiva Castro Urdiales</p>
+            <div>
+                <p>&copy; Web desarrollada por: Antonio Rodríguez Blaya.</p>
+                <a href="aviso_legal.html">Aviso Legal</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

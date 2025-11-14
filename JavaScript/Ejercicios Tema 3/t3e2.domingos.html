@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h1>Años en los que tu cumpleaños cae en Domingo</h1>
+    <script>
+        let dia = parseInt(prompt("Dime el día de tu cumpleaños: "));
+        let mes = parseInt(prompt("Dime el mes de tu cumpleaños (1-12): "));
+        let añoActual = new Date().getFullYear();
+
+        document.write("<h2>Tu cumpleaños caerá en domingo en los años:</h2>");
+
+        for (let año = añoActual; año <= 2100; año++) {
+            let fecha = new Date(año, mes - 1, dia);
+
+            if (fecha.getDay() === 0) {
+                document.write(año + "<br>");
+            }
+        }
+    </script>
+</body>
+</html>

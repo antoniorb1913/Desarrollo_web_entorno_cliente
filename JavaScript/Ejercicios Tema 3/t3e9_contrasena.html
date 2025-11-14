@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contraseña</title>
+</head>
+<body>
+    <h1>Contraseña</h1>
+    
+    <div>
+        <label for="contrasena">Ingresa la contraseña:</label><br>
+        <input type="text" id="contrasena" size="30"><br><br>
+        
+        <button onclick="vContrasena()">Procesar</button>
+    </div>
+    
+    <div id="resultado"></div>
+
+    <script>
+        function vContrasena() {
+            let contrasena = document.getElementById("contrasena").value;
+            let resultados = document.getElementById("resultado");
+            
+            let longitud = contrasena.length >= 8 && contrasena.length <= 16;
+            let mayuscula = /[A-Z]/.test(contrasena);
+            let minuscula = /[a-z]/.test(contrasena);
+            let numero = /[0-9]/.test(contrasena);
+            let caracterEspecial = /[-_@#$%&]/.test(contrasena);
+            
+            if (longitud && mayuscula && minuscula && numero && caracterEspecial) {
+                resultado.innerHTML = "Contraseña segura";
+            } else {
+                resultado.innerHTML = "Contraseña no segura";
+            }
+        }
+    </script>
+</body>
+</html>

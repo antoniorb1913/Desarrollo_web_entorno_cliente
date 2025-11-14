@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formato de Hora</title>
+</head>
+<body>
+    <h2>Selecciona formato:</h2>
+    <button onclick="mostrarHora(1)">Formato 1: 14:35:07</button>
+    <button onclick="mostrarHora(2)">Formato 2: 02:35 PM</button>
+    
+    <p id="resultado"></p>
+
+    <script>
+        function mostrarHora(opcion) {
+            let fecha = new Date();
+            let horas = fecha.getHours();
+            let minutos = fecha.getMinutes();
+            let segundos = fecha.getSeconds();
+            
+            // Añadir cero si es necesario
+            if(minutos < 10) minutos = "0" + minutos;
+            if(segundos < 10) segundos = "0" + segundos;
+            
+            if(opcion === 1) {
+                // Formato 1: 14:35:07
+                if(horas < 10) horas = "0" + horas;
+                document.getElementById("resultado").innerHTML = horas + ":" + minutos + ":" + segundos;
+            }
+            else if(opcion === 2) {
+                // Formato 2: 02:35 PM o 02:35:07 AM
+                let ampm = "AM";
+                if(horas >= 12) {
+                    ampm = "PM";
+                    if(horas > 12) horas = horas - 12;
+                }
+                if(horas === 0) horas = 12;
+                if(horas < 10) horas = "0" + horas;
+                
+                document.getElementById("resultado").innerHTML = horas + ":" + minutos + ":" + segundos + " " + ampm;
+            }
+        }
+        mostrarHora(1);
+    </script>
+</body>
+</html>
