@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Radio</title>
+</head>
+<body>
+    <h2>Calculadora de Radio y Círculo</h2>
+    
+    <input type="number" id="radio" placeholder="Introduce el radio">
+    <button onclick="calcular()">Calcular</button>
+    
+    <div id="resultados"></div>
+
+    <script>
+        function calcular() {
+            let radio = parseFloat(document.getElementById("radio").value);
+            let pi = Math.PI;
+            
+            let diametro = 2 * radio;
+            let perimetro = 2 * pi * radio;
+            let areaCirculo = pi * radio * radio;
+            let areaEsfera = 4 * pi * radio * radio;
+            let volumenEsfera = (4/3) * pi * radio * radio * radio;
+            
+            let resultados = document.getElementById("resultados");
+            resultados.innerHTML = 
+                "1. Radio: " + radio.toFixed(2) + " cm<br>" +
+                "2. Diámetro: " + diametro.toFixed(2) + " cm<br>" +
+                "3. Perímetro circunferencia: " + perimetro.toFixed(2) + " cm<br>" +
+                "4. Área del círculo: " + areaCirculo.toFixed(2) + " cm²<br>" +
+                "5. Área de la esfera: " + areaEsfera.toFixed(2) + " cm²<br>" +
+                "6. Volumen de la esfera: " + volumenEsfera.toFixed(2) + " cm³";
+        }
+    </script>
+</body>
+</html>

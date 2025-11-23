@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Días hasta Fin de Curso</title>
+</head>
+<body>
+    <h1>Días hasta el Fin de Curso</h1>
+    <div>
+        <p><strong>Fecha actual:</strong> <span id="fechaActual"></span></p>
+        <p><strong>Días restantes hasta el 24 de junio:</strong> <span id="diasRestantes"></span></p>
+    </div>
+<script>
+
+    let hoy = new Date();
+    let finCurso = new Date(hoy.getFullYear(), 5, 24);
+
+    if (hoy > finCurso) {
+        finCurso.setFullYear(finCurso.getFullYear() + 1);
+    }
+
+    let MS_POR_DIA = 1000 * 60 * 60 * 24;
+    let diasRestantes = Math.ceil((finCurso - hoy) / MS_POR_DIA);
+
+    document.getElementById("fechaActual").textContent = hoy.toLocaleDateString();
+    document.getElementById("diasRestantes").textContent = diasRestantes;
+
+</script>
+
+</body>
+</html>
