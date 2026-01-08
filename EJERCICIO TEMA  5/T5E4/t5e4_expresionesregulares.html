@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio t5e4 - Almacen</title>
+</head>
+<body>
+
+    <h2>Control de Lotes - Albuquerque</h2>
+
+    <form id="formBolsas">
+        
+        <p>
+            <label id="lblFecha" for="fecha">Fecha de creación (dd/mm/aaaa):</label><br>
+            <input type="text" id="fecha" required>
+        </p>
+
+        <p>
+            <label id="lblCocinero" for="cocinero">Cocinero (Nombre en clave):</label><br>
+            <input type="text" id="cocinero">
+        </p>
+
+        <p>
+            <label id="lblDestinatario" for="destinatario">Destinatario:</label><br>
+            <input type="text" id="destinatario">
+        </p>
+
+        <p>
+            <label id="lblGramos" for="gramos">Gramos (100-5000):</label><br>
+            <input type="number" id="gramos">
+        </p>
+
+        <p>
+            <label id="lblComposicion" for="composicion">Composición:</label><br>
+            <input type="text" id="composicion">
+        </p>
+
+        <p>
+            <label id="lblCuenta" for="cuenta">Número de cuenta EEUU:</label><br>
+            <input type="text" id="cuenta">
+        </p>
+
+        <p>
+            <label for="cuentaLimpia">Cuenta validada (formato limpio):</label><br>
+            <input type="text" id="cuentaLimpia" readonly>
+        </p>
+
+        <button type="submit" id="btnValidar">Registrar Bolsa</button>
+
+    </form>
+
+    <script src="t5e4_expresionesregulares.js"></script>
+
+</body>
+</html>

@@ -2,7 +2,13 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Ejercicio t5e1 - Formulario de Discos</title>
+    <title>Ejercicio t5e3 - Formulario de Discos</title>
+    <style>
+        .red { 
+            color: red; 
+            border: 2px solid red; 
+        }
+    </style>
 </head>
 <body>
 
@@ -10,18 +16,18 @@
 
     <form id="formDiscos" action="#" method="post">
         <p>
-            <label for="nombre">Nombre del disco:</label><br>
-            <input type="text" id="nombre" name="nombre" required>
+            <label id="lblNombre" for="nombre">Nombre del disco:</label><br>
+            <input type="text" id="nombre" name="nombre">
         </p>
 
         <p>
-            <label for="grupo">Grupo de música o cantante:</label><br>
-            <input type="text" id="grupo" name="grupo" required>
+            <label id="lblGrupo" for="grupo">Grupo de música o cantante:</label><br>
+            <input type="text" id="grupo" name="grupo">
         </p>
 
         <p>
-            <label for="anio">Año de publicación:</label><br>
-            <input type="number" id="anio" name="anio" min="1800" max="2026">
+            <label id="lblAnio" for="anio">Año de publicación:</label><br>
+            <input type="text" id="anio" name="anio">
         </p>
 
         <p>
@@ -35,8 +41,8 @@
         </p>
 
         <p>
-            <label for="estanteria">Número de estantería:</label><br>
-            <input type="number" id="estanteria" name="estanteria" min="1">
+            <label id="lblEstanteria" for="estanteria">Número de estantería:</label><br>
+            <input type="number" id="estanteria" name="estanteria">
         </p>
 
         <p>
@@ -47,6 +53,8 @@
 
         <button type="submit" id="btnGuardar">Guardar Disco</button>
     </form>
+
+    <script src="t5e3_formulario2.js"></script>
 
 </body>
 </html>
