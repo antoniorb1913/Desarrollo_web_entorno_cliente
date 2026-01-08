@@ -1,6 +1,8 @@
 ## **DESARROLLO DE APLICAIONES**
 
 
-### - TODO ESTA EN LA BRANCH DE PRIMERA EVALUACION
+### - Primera Evaluacion --> branch primera evaluacion
+### - Segunda Evaluacion --> branch segunda evaluacion
+
 
 
