@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio t5e1 - Formulario de Discos</title>
+</head>
+<body>
+
+    <h2>Gestión de Discoteca - Alta de Disco</h2>
+
+    <form id="formDiscos" action="#" method="post">
+        <p>
+            <label for="nombre">Nombre del disco:</label><br>
+            <input type="text" id="nombre" name="nombre" required>
+        </p>
+
+        <p>
+            <label for="grupo">Grupo de música o cantante:</label><br>
+            <input type="text" id="grupo" name="grupo" required>
+        </p>
+
+        <p>
+            <label for="anio">Año de publicación:</label><br>
+            <input type="number" id="anio" name="anio" min="1800" max="2026">
+        </p>
+
+        <p>
+            <label for="tipo">Tipo de música:</label><br>
+            <select id="tipo" name="tipo">
+                <option value="rock">Rock</option>
+                <option value="pop">Pop</option>
+                <option value="punk">Punk</option>
+                <option value="indie">Indie</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="estanteria">Número de estantería:</label><br>
+            <input type="number" id="estanteria" name="estanteria" min="1">
+        </p>
+
+        <p>
+            <label>
+                <input type="checkbox" id="prestado" name="prestado"> ¿Está prestado?
+            </label>
+        </p>
+
+        <button type="submit" id="btnGuardar">Guardar Disco</button>
+    </form>
+    <script src="t5e1_formulario.js"></script>
+
+</body>
+</html>
