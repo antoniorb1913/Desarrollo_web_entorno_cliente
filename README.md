@@ -5,20 +5,21 @@
 
 - #### CONETNIDO
   - #### JavaScript
-    - Ejercicios Tema 2
-    - Ejercicios Tema 3
-    - Ejercicios Tema 4
-    - Practica 1 JavaScript
-    - Practica 1 Sentencias
-    - Tablas
-    - examen js
+    - 📁 Ejercicios Tema 2
+    - 📁 Ejercicios Tema 3
+    - 📁 Ejercicios Tema 4
+    - 📁 Practica 1 JavaScript
+    - 📁 Practica 1 Sentencias
+    - 📁 Tablas
+    - 📁 examen js
   - #### Practica 1 Navegadores
-    - navegadores.pdf
+    - 📑 navegadores.pdf
   - #### freeCodeCamp
-    - JavaScript Basico.docx
+    - 📄 JavaScript Basico.docx
 
   
 ### - Segunda Evaluacion --> branch segunda evaluacion
+
 
 
 
