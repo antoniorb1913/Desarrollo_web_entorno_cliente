@@ -4,7 +4,7 @@
 ### - Primera Evaluacion --> branch primera evaluacion
 
 - #### CONETNIDO
-  - #### JavaScript
+  - #### 📁 JavaScript
     - 📁 Ejercicios Tema 2
     - 📁 Ejercicios Tema 3
     - 📁 Ejercicios Tema 4
@@ -12,13 +12,14 @@
     - 📁 Practica 1 Sentencias
     - 📁 Tablas
     - 📁 examen js
-  - #### Practica 1 Navegadores
+  - #### 📁 Practica 1 Navegadores
     - 📑 navegadores.pdf
-  - #### freeCodeCamp
+  - #### 📁 freeCodeCamp
     - 📄 JavaScript Basico.docx
 
   
 ### - Segunda Evaluacion --> branch segunda evaluacion
+
 
 
 
