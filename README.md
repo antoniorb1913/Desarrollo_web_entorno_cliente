@@ -31,7 +31,10 @@
   - #### 📁 REACT
     - #### 📁 nivel1-react
       - 📁 my-react-app
-      - 📑 Tarea 1-React.pdf
+      - 📑 Tarea1-React.pdf
+      - 📑 Tarea2-React.pdf
+      - 📑 Tarea3-React.pdf
+
 
 
 
