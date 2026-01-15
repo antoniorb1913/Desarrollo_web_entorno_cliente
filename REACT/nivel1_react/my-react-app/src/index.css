@@ -1,0 +1,14 @@
+.text-lowercase {
+  text-transform: lowercase;
+  color: #4a90e2;
+  font-family: sans-serif;
+}
+
+.Web-Designer {
+  color: #007bff;
+  font-weight: bold;
+}
+
+.boss {
+  color: #e00404;
+}

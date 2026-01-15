@@ -1,37 +1,23 @@
 function App() {
-  // Comenatrio antes del return punto 4.11
-  return (
-    <div>
-      {/* Comenatrio punto 4.12 */}
-      <h1>Nivel 1 de React desbloqueado</h1>
-      <h1>Luego cambia el div por un Fragment vacío: <> ... </> y guarda.</h1>
+  const users = [
+    { id: 1, name: 'Jose', role: 'Web-Developer' },
+    { id: 2, name: 'Estefanía', role: 'Web-Designer' },
+    { id: 3, name: 'Rubén', role: 'Team-Leader' },
+    { id: 4, name: 'Iker Rios', role: 'boss' },
+  ];
 
-      <ParentComponent/>
-    </div>
-  );
-  
-}
-function ParentComponent() {
   return (
     <>
-      <UserComponent />
-      <ProfileComponent />
-      <FeedComponent />
+      <p>Lista de usuarios activos:</p>
+      <ul>
+        {users.map((user) => (
+          <li key={user.id} className={user.role}> 
+            <strong>{user.name}</strong> — {user.role}
+          </li>
+        ))}
+      </ul>
     </>
   );
 }
 
-function UserComponent() {
-  return <h2>User component</h2>;
-}
-
-function ProfileComponent() {
-  return <h2>Profile component</h2>;
-}
-
-function FeedComponent() {
-  return <h2>Feed component</h2>;
-}
-
 export default App;
-
