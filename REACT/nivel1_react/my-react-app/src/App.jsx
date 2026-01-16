@@ -1,23 +1,25 @@
-function App() {
-  const users = [
-    { id: 1, name: 'Jose', role: 'Web-Developer' },
-    { id: 2, name: 'Estefanía', role: 'Web-Designer' },
-    { id: 3, name: 'Rubén', role: 'Team-Leader' },
-    { id: 4, name: 'Iker Rios', role: 'boss' },
-  ];
+import { useState } from "react";
+
+function ParentComponent() {
+  // 1. Crea un estado name con valor inicial 'Juanaco'
+  const [name, setName] = useState("Juanaco");
 
   return (
     <>
-      <p>Lista de usuarios activos:</p>
-      <ul>
-        {users.map((user) => (
-          <li key={user.id} className={user.role}> 
-            <strong>{user.name}</strong> — {user.role}
-          </li>
-        ))}
-      </ul>
+      {/* 2. Muestra el nombre en pantalla */}
+      <h1>Hola chavales {name}</h1>
+
+      {/* 3. Botón que cambia el nombre a 'Juanky' */}
+      <button onClick={() => setName("Juanky")}>
+        Cambiar Juanky
+      </button>
+
+      {/* 4. Segundo botón que cambia el nombre a otro diferente (Iker) */}
+      <button onClick={() => setName("Iker")}>
+        Cambiar a Iker
+      </button>
     </>
   );
 }
 
-export default App;
+export default ParentComponent;
