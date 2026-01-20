@@ -1,25 +1,28 @@
-import { useState } from "react";
+import { useState } from "react"
 
-function ParentComponent() {
-  // 1. Crea un estado name con valor inicial 'Juanaco'
-  const [name, setName] = useState("Juanaco");
+  export default function App() {
 
-  return (
-    <>
-      {/* 2. Muestra el nombre en pantalla */}
-      <h1>Hola chavales {name}</h1>
+    const [user, setUser] = useState(null)
+    const [newEmails, setNewEmails] = useState(0)
 
-      {/* 3. Botón que cambia el nombre a 'Juanky' */}
-      <button onClick={() => setName("Juanky")}>
-        Cambiar Juanky
-      </button>
+    const button = user
+      ? <button onClick={() => setUser(null)}>Logout</button>
+      : <button onClick={() => setUser({ name: 'Antoñico'
+})}>Login</button>
 
-      {/* 4. Segundo botón que cambia el nombre a otro diferente (Iker) */}
-      <button onClick={() => setName("Iker")}>
-        Cambiar a Iker
-      </button>
-    </>
-  );
+    return (
+      <>
+      <h1>Nivel 5: Renderizado condicional</h1>
+      {button}
+      {user ? <p>Bienvenido, {user.name}.</p> : <p>Inicia sesión para
+      continuar.</p>}
+      <hr />
+      <button onClick={() => setNewEmails((n) => n + 1)}>+1
+      email</button>
+      <button onClick={() => setNewEmails(0)}>Reset</button>
+      {newEmails > 0 && (
+      <h2>Tienes {newEmails} correos nuevos.</h2>
+      )}
+      </>
+  )
 }
-
-export default ParentComponent;
