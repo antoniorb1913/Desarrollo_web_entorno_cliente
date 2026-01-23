@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+.paragraph-text {
+  font-size: 20px;
+  color: red;
+}
+
+.paragraph-text:hover {
+  color: blue;
+}
+
+@media (max-width: 600px) {
+  .paragraph-text {
+    color: green;
+  }
+}
