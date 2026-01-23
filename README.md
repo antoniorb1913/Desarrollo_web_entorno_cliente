@@ -37,6 +37,8 @@
       - 📑 Tarea4-React.pdf
       - 📑 Tarea5-React.pdf
       - 📑 Tarea6-React.pdf
+      - 📑 Tarea7-React.pdf
+
 
 
 
