@@ -28,6 +28,9 @@
       - 📁 T5E3
       - 📁 T5E4
       - 📁 T5E5
+  - #### 📁 Ejercicios Tema 6 - Ejercicios de aplicación
+      - 📁 Ejercicio 1 - floristeria
+      - 📁 Ejercicio 2 - One Piece
   - #### 📁 REACT
     - #### 📁 nivel-react
       - 📁 my-react-app
@@ -39,6 +42,7 @@
       - 📑 Tarea6-React.pdf
       - 📑 Tarea7-React.pdf
       - 📑 Tarea8-React.pdf
+
 
 
 
